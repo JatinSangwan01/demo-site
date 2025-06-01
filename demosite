@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="StockMaster Coaching - Master stock trading with expert offline courses in India.">
+  <title>StockMaster Coaching</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #1f1c2c, #928dab);
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    header img.logo {
+      height: 90px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+      color: #ffdd57;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      color: #00e6e6;
+      margin-bottom: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .course {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 1.5rem 0;
+      padding: 2rem;
+      border-radius: 15px;
+      border: 1px solid #00ffff55;
+      transition: transform 0.3s ease;
+    }
+
+    .course:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    }
+
+    .course h3 {
+      font-size: 1.6rem;
+      color: #66fcf1;
+      margin-bottom: 0.8rem;
+    }
+
+    .course ul {
+      padding-left: 1.2rem;
+    }
+
+    .course li {
+      margin: 0.3rem 0;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid #444;
+    }
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="/mnt/data/A_logo_design_for_a_company_named_\"StockMaster_Coa.png" alt="StockMaster Coaching Logo" class="logo">
+    <h1>StockMaster Coaching</h1>
+  </header>
+
+  <section>
+    <h2 class="section-title">About Us</h2>
+    <p>StockMaster Coaching is an offline institute focused on delivering powerful and practical stock market training. We help beginners become confident traders through hands-on experience and real-world insights.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Courses Offered (Offline)</h2>
+
+    <div class="course">
+      <h3>Beginner Stock Trading</h3>
+      <p>This course is perfect for absolute beginners. We teach you:</p>
+      <ul>
+        <li>Stock market fundamentals</li>
+        <li>Introduction to equity, IPOs, and market indices</li>
+        <li>How to use trading platforms</li>
+        <li>Basic chart reading and indicators</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <h3>Technical Analysis</h3>
+      <p>Advance your understanding with:</p>
+      <ul>
+        <li>Support & Resistance levels</li>
+        <li>Candlestick patterns</li>
+        <li>Volume analysis</li>
+        <li>Trend lines and moving averages</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <h3>Options & Derivatives</h3>
+      <p>Learn how to trade options smartly:</p>
+      <ul>
+        <li>Call & Put concepts</li>
+        <li>Option Greeks</li>
+        <li>Option chain analysis</li>
+        <li>Risk management in derivatives</li>
+      </ul>
+    </div>
+
+    <div class="course">
+      <h3>Live Trading Sessions</h3>
+      <p>Practice real trades with mentors:</p>
+      <ul>
+        <li>Live market walk-through</li>
+        <li>Trade setups & psychology</li>
+        <li>Portfolio creation & review</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Demo Classes & Fees</h2>
+    <p>We provide free demo classes every weekend. Contact us to reserve your seat! Our course fees start at ₹4,999 and vary depending on duration and depth. EMI options available.</p>
+  </section>
+
+  <section>
+    <h2 class="section-title">Contact & Address</h2>
+    <p><strong>Phone:</strong> +91-9876543210<br>
+       <strong>Email:</strong> contact@stockmastercoaching.in<br>
+       <strong>Address:</strong> 1st Floor, Trade Plaza, Connaught Place, New Delhi, India</p>
+  </section>
+
+  <footer>
+    &copy; 2025 StockMaster Coaching. All Rights Reserved.
+  </footer>
+</body>
+
+</html>
