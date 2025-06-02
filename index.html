@@ -1,176 +1,239 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Master the stock market with StockMaster Coaching – offline trading courses by experts.">
   <title>StockMaster Coaching</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-    }body {
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
-  overflow-x: hidden;
-}
+      scroll-behavior: smooth;
+    }
 
-header {
-  padding: 1.5rem;
-  text-align: center;
-  background: #ffffff;
-  border-bottom: 2px solid #ddd;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+    body {
+      background: #fefefe;
+      color: #222;
+      line-height: 1.6;
+    }
 
-.logo {
-  max-width: 70px;
-  height: auto;
-  display: block;
-  margin: 0 auto 0.5rem;
-}
+    header {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      padding: 3rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid #e0e0e0;
+      position: relative;
+    }
 
-h1 {
-  font-size: 1.8rem;
-  color: #007bff;
-}
+    .logo {
+      width: 90px;
+      margin-bottom: 1rem;
+    }
 
-section {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: auto;
-  background-color: #ffffff;
-}
+    h1 {
+      font-size: 2.5rem;
+      color: #0077b6;
+    }
 
-.section-title {
-  font-size: 1.5rem;
-  color: #007bff;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  border-bottom: 2px solid #007bff33;
-  padding-bottom: 0.5rem;
-}
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
 
-.courses-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
+    nav a {
+      margin: 0.5rem 1.2rem;
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
 
-.course {
-  background: #f9f9f9;
-  padding: 1rem;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: 0.3s ease;
-}
+    nav a:hover {
+      color: #00b4d8;
+      border-bottom: 2px solid #00b4d8;
+    }
 
-.course:hover {
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
-}
+    section {
+      padding: 5rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
 
-.course h3 {
-  margin-bottom: 0.5rem;
-  color: #007bff;
-  font-size: 1.2rem;
-}
+    .section-title {
+      text-align: center;
+      font-size: 2.4rem;
+      color: #023e8a;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
 
-.course ul {
-  padding-left: 1rem;
-}
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #00b4d8;
+      margin: 12px auto 0;
+      border-radius: 2px;
+    }
 
-p, li {
-  font-size: 1rem;
-  color: #555;
-}
+    .courses-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
 
-footer {
-  background: #ffffff;
-  color: #555;
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.85rem;
-  border-top: 1px solid #ddd;
-}
+    .course {
+      background: linear-gradient(to top left, #ffffff, #f1faff);
+      border-radius: 18px;
+      padding: 2rem;
+      border: 1px solid #bde0fe;
+      box-shadow: 0 5px 20px rgba(0, 119, 182, 0.08);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
 
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.4rem;
-  }
+    .course:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 119, 182, 0.18);
+    }
 
-  .section-title {
-    font-size: 1.2rem;
-  }
+    .course h3 {
+      color: #0077b6;
+      margin-bottom: 0.8rem;
+    }
 
-  .course h3 {
-    font-size: 1.1rem;
-  }
+    .course ul {
+      padding-left: 1.2rem;
+    }
 
-  p, li {
-    font-size: 0.95rem;
-  }
-}
+    .highlight-box {
+      background: #e7f5ff;
+      border-left: 6px solid #00b4d8;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem auto;
+      max-width: 700px;
+    }
 
+    .highlight-box p {
+      font-style: italic;
+      color: #005f73;
+    }
+
+    footer {
+      background: #f1f1f1;
+      padding: 2rem 1rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      .section-title {
+        font-size: 1.9rem;
+      }
+
+      .course h3 {
+        font-size: 1.1rem;
+      }
+    }
   </style>
-</head><body>
+</head>
+
+<body>
   <header>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Stock_exchange_logo_template.svg/1200px-Stock_exchange_logo_template.svg.png" alt="StockMaster Coaching Logo" class="logo">
     <h1>StockMaster Coaching</h1>
-  </header>  <section>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#demo">Demo</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
     <h2 class="section-title">About Us</h2>
-    <p>At StockMaster Coaching, we bring real-world expertise to offline trading education. Our programs empower you to become a confident and strategic trader in the dynamic stock market.</p>
-  </section>  <section>
+    <div class="highlight-box">
+      <p>At StockMaster Coaching, we don’t just teach the market — we mentor traders to think like professionals. All our training is provided offline by seasoned traders, using real-world strategies that create confident, capable market participants.</p>
+    </div>
+  </section>
+
+  <section id="courses">
     <h2 class="section-title">Offline Courses</h2>
     <div class="courses-grid">
       <div class="course">
         <h3>Beginner Stock Trading</h3>
         <ul>
-          <li>Foundations of equity, indices, and trading types</li>
-          <li>Basics of trading platforms and account setup</li>
-          <li>Simple technical indicators and how to use them</li>
+          <li>Basics of equity, orders & platforms</li>
+          <li>Intro to charts, candlesticks & tools</li>
+          <li>Risk management foundations</li>
         </ul>
-      </div><div class="course">
-    <h3>Technical Analysis</h3>
-    <ul>
-      <li>Chart patterns, price action and signals</li>
-      <li>Understanding moving averages and RSI</li>
-      <li>Drawing trendlines and identifying breakouts</li>
-    </ul>
-  </div>
+      </div>
+      <div class="course">
+        <h3>Technical Analysis</h3>
+        <ul>
+          <li>Support/resistance, indicators</li>
+          <li>Breakout patterns, live chart reading</li>
+          <li>Market psychology and volume</li>
+        </ul>
+      </div>
+      <div class="course">
+        <h3>Options & Derivatives</h3>
+        <ul>
+          <li>Call/Put concepts and payoff charts</li>
+          <li>Option Greeks and volatility</li>
+          <li>Building live strategies</li>
+        </ul>
+      </div>
+      <div class="course">
+        <h3>Live Trading Sessions</h3>
+        <ul>
+          <li>Hands-on trading with real capital</li>
+          <li>Portfolio management and journals</li>
+          <li>Case studies & mentorship</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-  <div class="course">
-    <h3>Options & Derivatives</h3>
-    <ul>
-      <li>Concepts of Calls, Puts, and Premiums</li>
-      <li>Risk/reward calculation and Option Greeks</li>
-      <li>Strategies like Straddles, Spreads, and Hedging</li>
-    </ul>
-  </div>
-
-  <div class="course">
-    <h3>Live Trading Sessions</h3>
-    <ul>
-      <li>Observe and participate in real market conditions</li>
-      <li>Learn trade setups and risk mitigation in action</li>
-      <li>Build and manage a practical portfolio</li>
-    </ul>
-  </div>
-</div>
-
-  </section>  <section>
+  <section id="demo">
     <h2 class="section-title">Demo Classes & Fees</h2>
-    <p>Join our weekend demo classes free of cost! Course fees begin at ₹4,999 with various package options and EMI availability.</p>
-  </section>  <section>
+    <div class="highlight-box">
+      <p>Try our free demo sessions every Saturday to experience the difference! Our full offline courses start at just ₹4,999. We offer discounts for early registration and combo course bundles. Flexible payment and mentorship plans available.</p>
+    </div>
+  </section>
+
+  <section id="contact">
     <h2 class="section-title">Contact & Address</h2>
-    <p><strong>Phone:</strong> +91-9876543210<br>
-       <strong>Email:</strong> contact@stockmastercoaching.in<br>
-       <strong>Address:</strong> 1st Floor, Trade Plaza, Connaught Place, New Delhi, India</p>
-  </section>  <footer>
-    &copy; 2025 StockMaster Coaching | Empowering India’s Future Traders.
+    <p style="text-align:center">
+      <strong>Phone:</strong> <a href="tel:+919876543210" style="color:#0077b6;text-decoration:none">+91-9876543210</a><br>
+      <strong>Email:</strong> <a href="mailto:contact@stockmastercoaching.in" style="color:#0077b6;text-decoration:none">contact@stockmastercoaching.in</a><br>
+      <strong>Address:</strong> <a href="https://maps.google.com/?q=Trade+Plaza,+Connaught+Place,+New+Delhi" target="_blank" style="color:#0077b6;text-decoration:none">1st Floor, Trade Plaza, Connaught Place, New Delhi</a>
+    </p>
+  </section>
+
+  <footer>
+    &copy; 2025 StockMaster Coaching | Empowering the next generation of traders. Designed with passion.
   </footer>
-</body></html>
+</body>
+
+</html>
