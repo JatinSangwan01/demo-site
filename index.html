@@ -1,262 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Master the stock market with StockMaster Coaching – offline trading courses by experts.">
-  <title>StockMaster Coaching</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PRIME Stock Market Training Institute</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
-      scroll-behavior: smooth;
     }
 
     body {
-      background: #fefefe;
+      background: #ffffff;
       color: #222;
-      line-height: 1.6;
+      line-height: 1.7;
     }
 
     header {
       background: linear-gradient(135deg, #e0f7fa, #ffffff);
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
-      border-bottom: 2px solid #e0e0e0;
-      position: relative;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: #0077b6;
-    }
-
-    nav {
-      background: #ffffff;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 1rem;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    nav a {
-      margin: 0.5rem 1.2rem;
-      text-decoration: none;
-      color: #0077b6;
-      font-weight: 500;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-    }
-
-    nav a:hover {
-      color: #00b4d8;
-      border-bottom: 2px solid #00b4d8;
+      font-size: 1.8rem;
+      color: #007a5e;
+      font-weight: 600;
     }
 
     section {
-      padding: 5rem 1rem;
-      max-width: 1100px;
+      padding: 2rem 1.5rem;
+      max-width: 900px;
       margin: auto;
     }
 
     .section-title {
-      text-align: center;
-      font-size: 2.4rem;
-      color: #023e8a;
-      margin-bottom: 2.5rem;
-      position: relative;
+      font-size: 1.5rem;
+      color: #007a5e;
+      margin-bottom: 1rem;
+      border-left: 4px solid #00c896;
+      padding-left: 0.8rem;
     }
 
-    .section-title::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 4px;
-      background: #00b4d8;
-      margin: 12px auto 0;
-      border-radius: 2px;
+    ul {
+      margin-left: 1.2rem;
     }
 
-    .courses-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2.5rem;
-    }
-
-    .course {
-      background: linear-gradient(to top left, #ffffff, #f1faff);
-      border-radius: 18px;
-      padding: 2rem;
-      border: 1px solid #bde0fe;
-      box-shadow: 0 5px 20px rgba(0, 119, 182, 0.08);
-      transition: transform 0.4s ease, box-shadow 0.4s ease;
-    }
-
-    .course:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 30px rgba(0, 119, 182, 0.18);
-    }
-
-    .course h3 {
-      color: #0077b6;
-      margin-bottom: 0.8rem;
-    }
-
-    .course ul {
-      padding-left: 1.2rem;
-    }
-
-    .highlight-box {
-      background: #e7f5ff;
-      border-left: 6px solid #00b4d8;
-      padding: 1rem 1.5rem;
+    .highlight {
+      background: #e6f7f1;
+      padding: 1rem;
+      border-left: 5px solid #00c896;
       border-radius: 8px;
-      margin: 1.5rem auto;
-      max-width: 700px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
 
-    .highlight-box p {
-      font-style: italic;
-      color: #005f73;
+    .btn {
+      display: inline-block;
+      margin: 1rem 0.5rem;
+      padding: 0.8rem 1.4rem;
+      background: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #1ebe5d;
+    }
+
+    .contact p {
+      margin: 0.5rem 0;
     }
 
     footer {
-      background: #f1f1f1;
-      padding: 2rem 1rem;
       text-align: center;
-      color: #555;
+      padding: 1rem;
+      background: #f1f1f1;
       font-size: 0.9rem;
+      color: #555;
     }
 
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25D366;
-      color: white;
-      border: none;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-      z-index: 1000;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .whatsapp-button:hover {
-      background-color: #1ebe5d;
-    }
-
-    @media (max-width: 768px) {
+    @media (max-width: 600px) {
       h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
 
       .section-title {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
       }
 
-      .course h3 {
-        font-size: 1.1rem;
+      .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.1rem;
       }
     }
   </style>
 </head>
-
 <body>
+
   <header>
-    <h1>StockMaster Coaching</h1>
+    <h1>PRIME Stock Market Training Institute</h1>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#courses">Courses</a>
-    <a href="#demo">Demo</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
+  <section>
     <h2 class="section-title">About Us</h2>
-    <div class="highlight-box">
-      <p>At StockMaster Coaching, we don’t just teach the market — we mentor traders to think like professionals. All our training is provided offline by seasoned traders, using real-world strategies that create confident, capable market participants.</p>
+    <p>We are the only stock market coaching institute in the area. Our goal is to empower people with real market knowledge and help them become financially free. Join our 5-month Full Trader and Investor course today at <strong>PRIME Stock Market Training Institute</strong> (Israna, Panipat).</p>
+
+    <div class="highlight">
+      <p><strong>4+ years of experience</strong> in all financial markets</p>
     </div>
   </section>
 
-  <section id="courses">
-    <h2 class="section-title">Offline Courses</h2>
-    <div class="courses-grid">
-      <div class="course">
-        <h3>Beginner Stock Trading</h3>
-        <ul>
-          <li>Basics of equity, orders & platforms</li>
-          <li>Intro to charts, candlesticks & tools</li>
-          <li>Risk management foundations</li>
-        </ul>
-      </div>
-      <div class="course">
-        <h3>Technical Analysis</h3>
-        <ul>
-          <li>Support/resistance, indicators</li>
-          <li>Breakout patterns, live chart reading</li>
-          <li>Market psychology and volume</li>
-        </ul>
-      </div>
-      <div class="course">
-        <h3>Options & Derivatives</h3>
-        <ul>
-          <li>Call/Put concepts and payoff charts</li>
-          <li>Option Greeks and volatility</li>
-          <li>Building live strategies</li>
-        </ul>
-      </div>
-      <div class="course">
-        <h3>Live Trading Sessions</h3>
-        <ul>
-          <li>Hands-on trading with real capital</li>
-          <li>Portfolio management and journals</li>
-          <li>Case studies & mentorship</li>
-        </ul>
-      </div>
+  <section>
+    <h2 class="section-title">Courses Offered</h2>
+    <ul>
+      <li>Level 1: Beginners Level</li>
+      <li>Level 2: Advanced Level</li>
+    </ul>
+
+    <div class="highlight">
+      <p>Offline and Online modes available.<br>Live practical sessions and 1:1 doubt sessions every Saturday.</p>
     </div>
   </section>
 
-  <section id="demo">
-    <h2 class="section-title">Demo Classes & Fees</h2>
-    <div class="highlight-box">
-      <p>Try our free demo sessions every Saturday to experience the difference! Our full offline courses start at just ₹4,999. We offer discounts for early registration and combo course bundles. Flexible payment and mentorship plans available.</p>
-    </div>
+  <section>
+    <h2 class="section-title">Schedule & Batches</h2>
+    <ul>
+      <li>New batches start every month</li>
+      <li>Free demo classes available</li>
+    </ul>
   </section>
 
-  <section id="contact">
-    <h2 class="section-title">Contact & Address</h2>
-    <p style="text-align:center">
-      <strong>Phone:</strong> <a href="tel:+919876543210" style="color:#0077b6;text-decoration:none">+91-9876543210</a><br>
-      <strong>Email:</strong> <a href="mailto:contact@stockmastercoaching.in" style="color:#0077b6;text-decoration:none">contact@stockmastercoaching.in</a><br>
-      <strong>Address:</strong> <a href="https://maps.google.com/?q=Trade+Plaza,+Connaught+Place,+New+Delhi" target="_blank" style="color:#0077b6;text-decoration:none">1st Floor, Trade Plaza, Connaught Place, New Delhi</a>
-    </p>
+  <section>
+    <h2 class="section-title">Facilities</h2>
+    <ul>
+      <li>Digital Classrooms</li>
+      <li>Free Wi-Fi</li>
+      <li>Fully Air Conditioned Classrooms</li>
+      <li>Separate batch for boys and girls</li>
+    </ul>
   </section>
 
-  <a class="whatsapp-button" href="https://wa.me/919876543210" target="_blank" title="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-  </a>
+  <section>
+    <h2 class="section-title">Student Reviews</h2>
+    <p>⭐⭐⭐⭐⭐ — “PRIME gave me confidence in live markets!”</p>
+    <p>⭐⭐⭐⭐⭐ — “Trainers are really helpful and experienced.”</p>
+    <p>⭐⭐⭐⭐⭐ — “Loved the practical approach. Highly recommend!”</p>
+  </section>
+
+  <section class="contact">
+    <h2 class="section-title">Contact & Location</h2>
+    <p><strong>Phone:</strong> 9253635610, 9050355074</p>
+    <p><strong>Address:</strong> Near gas agency office, Israna (Panipat)</p>
+    <a href="https://wa.me/919253635610" class="btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> Book Demo Class
+    </a>
+    <a href="https://wa.me/919253635610" class="btn" target="_blank">
+      <i class="fab fa-whatsapp"></i> Register Now
+    </a>
+  </section>
 
   <footer>
-    &copy; 2025 StockMaster Coaching | Empowering the next generation of traders. Designed with passion by <span style="color:#0077b6;font-weight:500">Jatinfolio</span>. All rights reserved.
+    &copy; 2025 PRIME Stock Market Training Institute | Designed by <strong>Jatin Sangwan</strong>
   </footer>
-</body>
 
+</body>
 </html>
